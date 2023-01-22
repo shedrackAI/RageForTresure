@@ -12,7 +12,7 @@ canvas.height = 600;//600
 
 const playerImageShadow = './GameAssets/shadow.png'
 const playerHover = './GameAssets/player.png'
-const forGround = './GameAssets/forGround.png'
+const forGround = './GameAssets/ForGround.png'
 
 const maps = './GameAssets/Maps/Map.png'
 
