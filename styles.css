@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(57, 57, 57);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.x,.y {
+ color: white;
+ font-size: 10rem;
+ position: absolute;
+ top: 0;
+}
+
+.y {
+    margin-top: 170px;
+}
+
+canvas {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    border: 3px solid white;
+}
+
+section {
+    width: 500px;
+    height: 100%;
+    /* background-color: #626262; */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0px 16px 16px 0px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.sectionTwo {
+    border-radius: 16px 0px 0px 16px;
+}
+
+.section_3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.top_bar {
+    /* background-color: #FF0000; */
+    width: 100%;
+    /* height: 40px; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px;
+}
+
+.audio_btn {
+    height: 40px;
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+/* .ball {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #2c9932;
+    left: 0;
+    border-radius: 50%;
+} */
+
+.sec1 {
+    /* background-color: bisque; */
+}
+
+.life-container {
+    display: block;
+    padding: 20px;
+}
+
+.healthBar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heartImage {
+    width: 40px;
+    z-index: 2;
+    image-rendering: pixelated;
+}
+
+.heartBar_container {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 20px;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    left: -20px;
+    border: 2px solid white;
+}
+
+.heartBar {
+    width: 50%;
+    height: 100%;
+    background-color: #FF0000;
+}
+
+.food_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodImage {
+    width: 40px;
+    z-index: 2;
+    image-rendering: pixelated;
+}
+
+.foodBar_container {
+    width: 60%;
+    height: 15px;
+    background-color: white;
+    position: relative;
+    left: -20px;
+    border-radius: 0px 3px 3px 0px;
+    border: 2px solid white;
+}
+
+.foodBar {
+    width: 60%;
+    height: 100%;
+    background-color: #E1726F;
+}
+
+.sec2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background-color: rgb(162, 242, 198); */
+}
+
+.asset_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    padding: 5px;
+    gap: 20px 20px;
+}
+
+.asset_box_container {
+    width: 50px;
+    height: 50px;
+    background-color: darksalmon;
+    border-radius: 5px;
+    position: relative;
+}
+
+.number_of_items {
+    position: absolute;
+    right: 3px;
+    bottom: 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asset_box {
+    width: 10%;
+    height: 10%;
+}
+
+.sec3 {
+    /* background-color: cornflowerblue; */
+}
+
+.quest_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-top: 60px;
+    /* background-color: #E1726F; */
+    overflow: visible;
+}
+
+.quest_image {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    /* background-color: #FF0000; */
+    top: -40px;
+    border-radius: 5px;
+    border: 2px solid white;
+    object-fit: contain;
+}
+
+.quest_image img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+}
+
+.quest_details_container {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.quest_details_container div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 10px;
+    font-size: 11px;
+}
+
+.quest_text {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 4px;
+}
+
+.sec4 {
+    padding: 10px;
+}
+
+.keys_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.keys_container img {
+    width: 60px;
+    image-resolution: 100%;
+    image-rendering: pixelated;
+}
+
+.asd_key_container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.coin_container {
+    background-color: white;
+    display: flex;
+    min-width: 220px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.coin_container img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.phone_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.phone_container {
+    width: 280px;
+    height: 400px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone_header {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.speaker {
+    width: 60px;
+    height: 7px;
+    background-color: rgb(59, 58, 58);
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.camera {
+    width: 13px;
+    height: 13px;
+    background-color: rgb(87, 87, 87);
+    border-radius: 50%;
+}
+
+.phone_screen {
+    width: 90%;
+    flex: 1;
+    object-fit: contain;
+    background-image: url("./GameAssets/phone_Wall/D9n35y6WkAIaciR.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.phone_screen img {
+    object-fit: contain;
+    width: 100%;
+    /* image-rendering: pixelated; */
+}
+
+.phone_button {
+    width: 60px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+}
+
+.screen_header {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 5px;
+}
+
+.screen_header img {
+    width: 15px;
+    /* image-rendering: pixelated; */
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.screen_bottom_apps_container {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.screen_bottom_apps_container img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.setting_section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.setting_btn {
+    width: 40px;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    position: relative;
+    float: right;
+    clear: both;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    animation: settingBtnRollBack 1s ease;
+    margin: 10px;
+}
+
+.setting_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 0px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0;
+    transition: all 1s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin-right: 50px;
+    color: white;
+}
+
+.height {
+    height: auto;
+    opacity: 1;
+}
+
+.roll_btn {
+    animation: settingBtnRoll 1s ease;
+}
+
+.roll_btn_back {
+    animation: settingBtnRollBack 1s ease;
+}
+
+@keyframes settingBtnRoll {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes settingBtnRollBack {
+    from {
+        transform: rotateZ(360deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+/* background: rgba( 255, 255, 255, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); */

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>blackprince.io</title>
+</head>
+
+<body>
+    <!-- <audio src="./GameAssets/Audios/Conquer The Success Peaks.wav" loop autoplay></audio> -->
+    <div class="ball"></div>
+    <div class="container">
+        <section>
+            <div class="sec1">
+                <div class="life-container">
+                    <div class="healthBar_container">
+                        <img class="heartImage" src="./GameAssets/Icons/BlackPrince icons.png" alt="">
+                        <div class="heartBar_container">
+                            <div class="heartBar"></div>
+                        </div>
+                    </div>
+                    <div class="food_container">
+                        <img class="foodImage" src="./GameAssets/Icons/food icon.png" alt="">
+                        <div class="foodBar_container">
+                            <div class="foodBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec2">
+                <div class="asset_container">
+                    <div class="asset_box_container">
+                        <div class="number_of_items">5</div>
+                        <div class="asset_box"></div>
+                    </div>
+                    <div class="asset_box_container">
+                        <div class="number_of_items">11</div>
+                        <div class="asset_box"></div>
+                    </div>
+                    <div class="asset_box_container">
+                        <div class="number_of_items">2</div>
+                        <div class="asset_box"></div>
+                    </div>
+                    <div class="asset_box_container">
+                        <div class="asset_box"></div>
+                        <div class="number_of_items">8</div>
+                    </div>
+                    <div class="asset_box_container">
+                        <div class="number_of_items">10</div>
+                        <div class="asset_box"></div>
+                    </div>
+                    <div class="asset_box_container">
+                        <div class="number_of_items">13</div>
+                        <div class="asset_box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec3">
+                <div class="quest_container">
+                    <div class="quest_image">
+                        <img src="./GameAssets/hape3.jpg" alt="">
+                    </div>
+                    <div class="quest_details_container">
+                        <div>
+                            <h3>quest</h3>
+                            <h3>0.58</h3>
+                        </div>
+                        <h4 class="quest_text">
+                            In every step you take alway look back to find the
+                            Red Goat
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec4">
+                <div class="keyboard_keys">
+                    <div class="keys_container">
+                        <img class="w" src="./GameAssets/Keyboard-keys/UpKey/w.png" alt="">
+                        <div class="asd_key_container">
+                            <img class="a" src="./GameAssets/Keyboard-keys/UpKey/a.png" alt="">
+                            <img class="s" src="./GameAssets/Keyboard-keys/UpKey/s.png" alt="">
+                            <img class="d" src="./GameAssets/Keyboard-keys/UpKey/d.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section_3">
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="top_bar">
+                <div class="audio_btn"></div>
+            </div>
+            <canvas id="main_canvas"></canvas>
+        </div>
+
+        <section class="sectionTwo">
+            <div class="coin_section">
+                <div class="coin_container">
+                    <img src="./GameAssets//Icons/coin_logo.svg" alt="">
+                    <h4 class="coin_amount">11,000</h4>
+                    <img src="./GameAssets/Icons/pluse.svg" alt="">
+                </div>
+            </div>
+
+            <div class="phone_section">
+                <div class="phone_container">
+                    <div class="phone_header">
+                        <div class="speaker"></div>
+                        <div class="camera"></div>
+                    </div>
+                    <div class="phone_screen">
+                        <div class="screen_header">
+                            <img class="network" src="./GameAssets/Icons/wifi.png" alt="">
+                            <img class="battery" src="./GameAssets/Icons/full-battery-64.png" alt="">
+                        </div>
+                        <h3 class="time">11:00</h3>
+                        <div class="screen_bottom_apps_container">
+                            <img src="./GameAssets/Icons/contact_phone.png" alt="">
+                            <img src="./GameAssets/Icons/calculator.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="phone_button"></div>
+                </div>
+            </div>
+
+            <div class="setting_section">
+                <div class="setting_container">
+                    <label for="">
+                        Character Speed
+                        <input class="char_speed" type="range" name="characterSpeed" id="">
+                    </label>
+                    <label for="">
+                        Character Speed
+                        <input type="range" name="characterSpeed" id="">
+                    </label>
+                    <label for="">
+                        Character Speed
+                        <input type="range" name="characterSpeed" id="">
+                    </label>
+                </div>
+                <img class="setting_btn" src="./GameAssets/Icons/gear.png" alt="">
+            </div>
+        </section>
+    </div>
+    <!-- <audio src="./GameAssets/Audios/Conquer The Success Peaks.wav"></audio> -->
+
+
+
+</body>
+<script src="./scripts/utils.js"></script>
+<script src="./GameAssets/collision3.js"></script>
+<script src="./scripts/gameImages.js"></script>
+<script src="./scripts/changeCharacterFrame.js"></script>
+<script src="./scripts/positionMapForGameAssets/collisionBlock.js"></script>
+<script src="./scripts/EnterBulidings/playerHouse.js"></script>
+<script src="./scripts/classes.js"></script>
+
+<script src="./scripts/GameMainCharacter/characterImages.js"></script>
+<script src="./scripts/GameMainCharacter/characterCreation.js"></script>
+<script src="./scripts/GameMainCharacter/mainCharacters.js"></script>
+<script src="./scripts/GameMainCharacter/mainCharacterActions.js"></script>
+
+<script src="./scripts/CharacterProperties/healthBar.js"></script>
+
+<script src="./scripts/NPCs/npcImages.js"></script>
+<script src="./scripts/NPCs/npcCreation.js"></script>
+<script src="./scripts/NPCs/npcAnimations.js"></script>
+<script src="./scripts/NPCs/npc.js"></script>
+
+<script src="./scripts/Props/props.js"></script>
+<script src="./scripts/Props/propCreation.js"></script>
+
+<script src="./scripts/keyboardNavigation.js"></script>
+
+<script src="./scripts/positionMapForGameAssets/eatingChickenPositions.js"></script>
+<script src="./scripts/positionMapForGameAssets/sheepEatingPositionMap.js"></script>
+<script src="./scripts/positionMapForGameAssets/pigEatingPosition.js"></script>
+<script src="./scripts/animals.js"></script>
+<script src="./scripts/animalMapPositionCreation.js"></script>
+<script src="./scripts/animalCreation.js"></script>
+
+<script src="./scripts/setting.js"></script>
+
+<script src="./Scripts/bulidMapArray.js"></script>
+<script src="./Scripts/moveObjects.js"></script>
+<script src="./Scripts/MovableObjects/mapCollision.js"></script>
+<script src="./Scripts/MovableObjects/playerHouseCollision.js"></script>
+
+<script src="./script.js"></script>
+<script src="./scripts/keyBoardEvents.js"></script>
+
+</html>

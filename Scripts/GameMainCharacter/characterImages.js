@@ -1,0 +1,1 @@
+const mainCharacterImage = './GameAssets/hero.png';
